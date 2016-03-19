@@ -1,0 +1,200 @@
+@charset "UTF-8";
+.pkw-plugin-first, .pkw-plugin-second {
+  font-size: 13px;
+  text-align: left; }
+  .pkw-plugin-first span, .pkw-plugin-second span {
+    font-size: 15px; }
+
+.pkw-plugin-first select {
+  display: block;
+  width: 100%;
+  font-size: 13px;
+  height: 32px;
+  line-height: 32px;
+  border: 0px none;
+  margin: 0 0 30px 0;
+  padding: 0 5px;
+  color: #2e94b4;
+  background: #eeeeee; }
+  @media (max-width: 768px) {
+    .pkw-plugin-first select {
+      margin: 0 0 15px 0; } }
+
+.pkw-plugin-second select, .pkw-plugin-second input {
+  display: block;
+  width: 100%;
+  font-size: 13px;
+  height: 32px;
+  line-height: 32px;
+  border: 0px none;
+  margin: 0 0 12px 0;
+  padding: 0 5px;
+  color: #2e94b4;
+  background: #eeeeee; }
+  @media (max-width: 768px) {
+    .pkw-plugin-second select, .pkw-plugin-second input {
+      margin: 0 0 8px 0;
+      height: 30px;
+      line-height: 30px; } }
+
+.pkw-plugin-next-button button, .pkw-plugin-submit-button button {
+  width: 100%;
+  height: 35px;
+  padding-left: 1em;
+  border: none;
+  margin: 5px 0 0;
+  color: #fff;
+  border-radius: 2px;
+  line-height: 33px;
+  font-size: 20px;
+  letter-spacing: 1em;
+  background-color: #4bac95;
+  background: linear-gradient(to right, #32a9bb, #cdd580); }
+
+.pkw-plugin-next-button button:hover, .pkw-plugin-second button:hover {
+  background-color: #2e94b4;
+  background: linear-gradient(to right, #2e94b4, #4bac95); }
+
+.pkw-plugin-success-icon {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  padding: 30px;
+  background-color: #4bac95;
+  border-radius: 500px;
+  font-size: 30px;
+  color: #fff;
+  margin: 40px auto 10px; }
+
+.wimaw-haken {
+  display: inline-block;
+  color: #00A5EE;
+  margin: 0 4.5% 0 1%; }
+  .wimaw-haken .glyphicon.glyphicon-ok {
+    background-color: #00A5EE;
+    color: white;
+    padding: 5px;
+    border-radius: 20px; }
+
+#pkw-plugin {
+  width: 100%;
+  max-width: 400px;
+  text-align: center; }
+
+#pkw-plugin-progress {
+  margin: 0 0 10px 0; }
+  #pkw-plugin-progress.nav-wizard.nav-justified > li:hover a {
+    background-color: #eeeeee;
+    color: #337ab7; }
+    #pkw-plugin-progress.nav-wizard.nav-justified > li:hover a:after {
+      border-left-color: #eeeeee; }
+  #pkw-plugin-progress.nav-wizard.nav-justified > li > a {
+    padding: 6px 15px; }
+  #pkw-plugin-progress.nav-wizard.nav-justified > li.done a {
+    background: #4bac95;
+    color: #fff; }
+    #pkw-plugin-progress.nav-wizard.nav-justified > li.done a .pkw-plugin-step-text:before {
+      content: "✓ "; }
+    #pkw-plugin-progress.nav-wizard.nav-justified > li.done a:after {
+      border-left-color: #4bac95; }
+  #pkw-plugin-progress.nav-wizard.nav-justified > li.active:hover a, #pkw-plugin-progress.nav-wizard.nav-justified > li.done:hover a {
+    background: #4bac95;
+    color: #fff; }
+  #pkw-plugin-progress.nav-wizard.nav-justified > li.active:hover a:after, #pkw-plugin-progress.nav-wizard.nav-justified > li.done:hover a:after {
+    border-left-color: #4bac95; }
+  #pkw-plugin-progress.nav-wizard > li:not(:last-child) > a:after {
+    border-top-width: 16px;
+    border-bottom-width: 16px;
+    border-left-width: 16px;
+    right: -16px; }
+  #pkw-plugin-progress.nav-wizard > li:not(:last-child) > a:before, #pkw-plugin-progress.nav-wizard > li:not(:first-child) > a:before {
+    border-top-width: 16px;
+    border-bottom-width: 16px;
+    border-left-width: 16px;
+    right: -16px; }
+
+.nav-wizard > li {
+  float: left; }
+  .nav-wizard > li > a {
+    position: relative;
+    background-color: #eee; }
+    .nav-wizard > li > a .badge {
+      margin-left: 3px;
+      color: #eee;
+      background-color: #4bac95; }
+  .nav-wizard > li:not(:first-child) > a {
+    padding-left: 34px; }
+    .nav-wizard > li:not(:first-child) > a:before {
+      width: 0;
+      height: 0;
+      border-top: 20px inset transparent;
+      border-bottom: 20px inset transparent;
+      border-left: 20px solid #fff;
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0; }
+  .nav-wizard > li:not(:last-child) > a {
+    margin-right: 6px; }
+    .nav-wizard > li:not(:last-child) > a:after {
+      width: 0;
+      height: 0;
+      border-top: 20px inset transparent;
+      border-bottom: 20px inset transparent;
+      border-left: 20px solid #eee;
+      position: absolute;
+      content: "";
+      top: 0;
+      right: -20px;
+      z-index: 2; }
+  .nav-wizard > li:first-child > a {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px; }
+  .nav-wizard > li:last-child > a {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px; }
+  .nav-wizard > li.done:hover > a, .nav-wizard > li:hover > a {
+    background-color: #d5d5d5; }
+  .nav-wizard > li.done:hover > a:before, .nav-wizard > li:hover > a:before {
+    border-right-color: #d5d5d5; }
+  .nav-wizard > li.done:hover > a:after, .nav-wizard > li:hover > a:after {
+    border-left-color: #d5d5d5; }
+  .nav-wizard > li.done > a {
+    background-color: #e2e2e2; }
+    .nav-wizard > li.done > a:before {
+      border-right-color: #e2e2e2; }
+    .nav-wizard > li.done > a:after {
+      border-left-color: #e2e2e2; }
+  .nav-wizard > li.active > a {
+    color: #fff;
+    background-color: #4bac95; }
+    .nav-wizard > li.active > a:hover, .nav-wizard > li.active > a:focus {
+      color: #fff;
+      background-color: #4bac95; }
+    .nav-wizard > li.active > a:after {
+      border-left-color: #4bac95; }
+    .nav-wizard > li.active > a .badge {
+      color: #4bac95;
+      background-color: #fff; }
+  .nav-wizard > li.disabled > a {
+    color: #777; }
+    .nav-wizard > li.disabled > a:hover, .nav-wizard > li.disabled > a:focus {
+      color: #777;
+      text-decoration: none;
+      background-color: #eee;
+      cursor: default; }
+    .nav-wizard > li.disabled > a:before {
+      border-right-color: #eee; }
+    .nav-wizard > li.disabled > a:after {
+      border-left-color: #eee; }
+.nav-wizard.nav-justified > li {
+  float: none; }
+  .nav-wizard.nav-justified > li > a {
+    padding: 10px 15px; }
+
+@media (max-width: 768px) {
+  .nav-wizard.nav-justified > li > a {
+    border-radius: 4px;
+    margin-right: 0; }
+    .nav-wizard.nav-justified > li > a:before, .nav-wizard.nav-justified > li > a:after {
+      border: none !important; } }
